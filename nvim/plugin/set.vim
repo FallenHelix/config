@@ -25,3 +25,7 @@ set cmdheight=2
 set updatetime=50
 
 set shortmess+=c
+
+
+"encoding
+set encoding=UTF-8
