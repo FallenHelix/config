@@ -1,24 +1,25 @@
 # Font configuration (changes require restart)
+
 font:
   # Normal (roman) font face
-  normal:
-    family: Hack
-    style: Regular
+    normal:
+        family: Hack
+        style: Regular
 
   # Bold font face
-  bold:
-    family: Hack
-    style: Bold
+    bold:
+        family: Hack
+        style: Bold
 
   # Italic font face
-  italic:
-    family: Hack
-    style: Italic
+    italic:
+        family: Hack
+        style: Italic
 
   # Bold italic font face
-  bold_italic:
-    family: Hack
-    style: Bold Italic
+    bold_italic:
+        family: Hack
+        style: Bold Italic
 
   # Point size
-  size: 14.0
+    size: 14.0
