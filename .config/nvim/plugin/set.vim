@@ -29,3 +29,7 @@ set shortmess+=c
 
 "encoding
 set encoding=UTF-8
+
+
+" Mouse cursor
+set mouse=a
