@@ -41,5 +41,7 @@ augroup END
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
 
+" press F5 to toggle nerd tree
+nnoremap <F5> :NERDTreeToggle<CR>
 
 

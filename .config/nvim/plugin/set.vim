@@ -33,3 +33,8 @@ set encoding=UTF-8
 
 " Mouse cursor
 set mouse=a
+
+
+" for vim ploygot, recommeded from docs
+set nocompatible
+set autoindent

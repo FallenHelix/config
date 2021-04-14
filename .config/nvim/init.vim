@@ -15,6 +15,23 @@ Plug 'scrooloose/nerdtree-project-plugin'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 
+"Fancy Status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Fzf fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+" COC for auto completion
+
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
+Plug 'sheerun/vim-polyglot'
+
+"Terminal
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 " Colour scheme
