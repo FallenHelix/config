@@ -15,6 +15,9 @@ Plug 'scrooloose/nerdtree-project-plugin'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 
+" Bracket Colourizer
+Plug 'junegunn/rainbow_parentheses.vim'
+
 "Fancy Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
