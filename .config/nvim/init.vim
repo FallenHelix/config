@@ -39,7 +39,7 @@ Plug 'voldikss/vim-floaterm'
 call plug#end()
 " Colour scheme
 colorscheme  gruvbox
-highlight Normal
+highlight Normal guibg=none
 " Later guibg=none
 
 

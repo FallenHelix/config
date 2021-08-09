@@ -23,6 +23,13 @@ nnoremap <leader>9 9gt
 nnoremap <leader>w gt
 nnoremap <leader>W gT
 " }}
+"
+
+
+" Selection and moving content
+vnoremap  J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 
 " Vinyl code
 fun! TrimWhitespace()
@@ -40,8 +47,5 @@ augroup END
 " Nerd Tree
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
-
-" press F5 to toggle nerd tree
-nnoremap <F5> :NERDTreeToggle<CR>
 
 
