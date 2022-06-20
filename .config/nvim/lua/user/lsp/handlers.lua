@@ -45,13 +45,24 @@ M.setup = function()
 end
 
 local function lsp_highlight_document(client)
-   -- Set autocommands conditional on server_capabilities
-    local status_ok, illuminate = pcall(require, "illuminate")
-    if not status_ok then
-      vim.notify("illuminate not found")
-      return
-    end
-    illuminate.on_attach(client)
+  -- Set autocommands conditional on server_capabilities
+  local status_ok , illuminiate = pcall(require, "illuminiate")
+  if not status_ok then 
+    vim.notify("illuminiate not found!")
+    return
+  end
+  illuminiate.on_attach(client)
+  -- if client.server_capabilities.document_highlight then
+  --   vim.api.nvim_exec(
+  --     [[
+  --     augroup lsp_document_highlight
+  --       autocmd! * <buffer>
+  --       autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+  --       autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+  --     augroup END
+  --   ]],
+  --     false
+  --   )
   -- end
 end
 
@@ -97,4 +108,3 @@ end
 M.capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
 return M
-

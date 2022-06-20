@@ -19,8 +19,8 @@ end
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
   augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -86,13 +86,13 @@ return packer.startup(function(use)
 
   -- Telescope
   use { 'nvim-telescope/telescope.nvim',
-  require = { {'nvim-lua/plenary.nvim' },
-              {'nvim-telescope/telescope-media-files.nvim'},
-            }
-          }
+    require = { {'nvim-lua/plenary.nvim' },
+      {'nvim-telescope/telescope-media-files.nvim'},
+    }
+  }
   use 'nvim-telescope/telescope-media-files.nvim'
 
--- Treesitter
+  -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -109,9 +109,26 @@ return packer.startup(function(use)
   use  'lewis6991/gitsigns.nvim'
 
   -- Nvim Tree 
-  use "kyazdani42/nvim-tree.lua"
+  -- Nvim web -devioncs
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+  -- use "kyazdani42/nvim-tree.lua"
+  -- use "kyazdani42/nvim-web-devicons"
 
-  
+  -- Nvim Buffer line
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+
+  -- Null ls
+  use "jose-elias-alvarez/null-ls.nvim"
+
+  -- Toggle Terminal 
+  use "akinsho/toggleterm.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

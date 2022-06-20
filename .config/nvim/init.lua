@@ -9,6 +9,8 @@ require "user.treesitter"
 require "user.autopairs"
 require "user.comment"
 require "user.gitsigns"
+require "user.nvim-tree"
+require "user.bufferline"
 
 -- Enable colourscheme
 vim.cmd "colorscheme darkplus"
