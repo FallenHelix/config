@@ -11,6 +11,13 @@ require "user.comment"
 require "user.gitsigns"
 require "user.nvim-tree"
 require "user.bufferline"
+require "user.toggleterm"
+
+-- Into the dark
+require "user.impatient"
+require "user.indentline"
+require "user.alpha"
+require "user.lualine"
 
 -- Enable colourscheme
 vim.cmd "colorscheme darkplus"

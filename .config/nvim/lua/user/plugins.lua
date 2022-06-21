@@ -129,6 +129,28 @@ return packer.startup(function(use)
 
   -- Toggle Terminal 
   use "akinsho/toggleterm.nvim"
+
+  -- NVIM impatient
+  use "lewis6991/impatient.nvim"
+
+  -- Indent Blank Line
+  use "lukas-reineke/indent-blankline.nvim"
+
+  -- Nvim Alpha Gretter
+  use {
+    'goolord/alpha-nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+    end
+  }
+
+
+  -- Lua line 
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

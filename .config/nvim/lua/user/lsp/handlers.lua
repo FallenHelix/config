@@ -46,9 +46,10 @@ end
 
 local function lsp_highlight_document(client)
   -- Set autocommands conditional on server_capabilities
-  local status_ok , illuminiate = pcall(require, "illuminiate")
+  --vim-illuminate
+  local status_ok , illuminiate = pcall(require, "illuminate")
   if not status_ok then 
-    vim.notify("illuminiate not found!")
+    vim.notify("illuminate not found!")
     return
   end
   illuminiate.on_attach(client)
