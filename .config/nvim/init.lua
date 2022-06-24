@@ -20,6 +20,6 @@ require "user.alpha"
 require "user.lualine"
 
 -- Enable colourscheme
-vim.cmd "colorscheme darkplus"
+--vim.cmd "colorscheme darkplus"
 
 

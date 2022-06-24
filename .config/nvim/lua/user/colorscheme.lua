@@ -7,3 +7,9 @@ if not status_ok then
   return
 end
 
+-- Lua
+require('onedark').setup {
+    style = 'cool'
+}
+require('onedark').load()
+

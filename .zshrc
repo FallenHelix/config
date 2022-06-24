@@ -122,3 +122,4 @@ prompt walters
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 (( ! ${+functions[p10k]} )) || p10k finalize
 source $HOME/.zsh/aliases
+export PATH=$PATH:/usr/local/go/bin
